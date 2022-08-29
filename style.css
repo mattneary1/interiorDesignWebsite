@@ -7,7 +7,6 @@ body {
 }
 
 .wrapper, .wrapper2 {
-    overflow: hidden;
     position: relative;
 }
 
@@ -39,7 +38,7 @@ body {
 
 .wrapper:hover img, .wrapper2:hover img {
     opacity: 0.9;
-    filter: grayscale(50%) brightness(30%) sepia(25%) hue-rotate(10deg) saturate(300%) contrast(0.8);
+    filter: grayscale(70%) brightness(30%) sepia(25%) hue-rotate(10deg) saturate(300%) contrast(0.8);
 }
 
 .wrapper:hover .overlay, .wrapper2:hover .overlay {
@@ -71,5 +70,19 @@ body {
     }
     to {
       opacity: 1;
+    }
+}
+
+@media (max-width: 992px) {
+    .projects-menu ul {
+        display: none;
+    }
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 90vw;
     }
 }
