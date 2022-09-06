@@ -18,6 +18,10 @@ h2, h4, i {
     color: #8C9487;
 }
 
+.unstyled {
+    text-decoration: none;
+}
+
 .button-animate .btn {
     transition: 1s ease;
 }
