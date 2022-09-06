@@ -6,14 +6,6 @@ body {
     background-color: white;
 }
 
-.wrapper, .wrapper2 {
-    position: relative;
-}
-
-.wrapper:hover, .wrapper2:hover {
-    cursor: pointer;  
-}
-
 h2, h4, i {
     color: #8C9487;
 }
@@ -99,12 +91,15 @@ h2, h4, i {
     body {
         padding-top: 90px;
     }
+
     .main-logo {
         height: 60px;
     }
+
     .projects-menu ul {
         display: none;
     }
+    
     .projects-container {
         display: flex;
         flex-direction: column;
@@ -116,6 +111,14 @@ h2, h4, i {
 }
 
 @media (min-width: 993px) {
+    .wrapper, .wrapper2 {
+        position: relative;
+    }
+    
+    .wrapper:hover, .wrapper2:hover {
+        cursor: pointer;  
+    }
+
     .wrapper .overlay {
         position: absolute;
         top: 50%;
